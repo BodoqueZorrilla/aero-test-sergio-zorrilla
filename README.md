@@ -7,9 +7,6 @@ Creación de una aplicación sencilla para ver si puedo pasar a la siguiente ent
 
 _Al ser una prueba todo estara en main para evitar trabajo de giflow_
 
-Mira **Deployment** para conocer como desplegar el proyecto.
-
-
 ### ¿En qué consiste la prueba? 📋
 
 Se espera que realices una app de localización de aeropuertos con 3 pantallas.
