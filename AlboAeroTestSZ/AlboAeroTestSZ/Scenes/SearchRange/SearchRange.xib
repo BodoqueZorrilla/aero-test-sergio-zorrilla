@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchRangeViewController" customModule="AlboAeroTestSZ" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionKmLabel" destination="ods-tA-RYd" id="aF9-bh-R43"/>
+                <outlet property="nameAppLabel" destination="jbs-DW-X88" id="KCt-Ln-6kK"/>
+                <outlet property="rangeLabel" destination="hWk-dd-1Za" id="p8X-UQ-ETw"/>
+                <outlet property="rangeSlider" destination="YOx-Uk-Shd" id="dvw-rJ-d6y"/>
+                <outlet property="searchButton" destination="WSl-Es-XMb" id="qNE-S0-h85"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Kb8-er-JUM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbs-DW-X88">
+                    <rect key="frame" x="20" y="64" width="374" height="107.5"/>
+                    <string key="text">AIRPORT
+finder</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="did-fi-2kA">
+                    <rect key="frame" x="20" y="368" width="374" height="160"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWk-dd-1Za">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="54"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                            <color key="textColor" name="grayLabel"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="YOx-Uk-Shd">
+                            <rect key="frame" x="-2" y="74" width="378" height="31"/>
+                            <connections>
+                                <action selector="sliderDidChange:" destination="-1" eventType="valueChanged" id="SHi-gv-PVI"/>
+                            </connections>
+                        </slider>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ods-tA-RYd">
+                            <rect key="frame" x="0.0" y="124" width="374" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <color key="textColor" name="grayLabel"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSl-Es-XMb">
+                    <rect key="frame" x="20" y="782" width="374" height="60"/>
+                    <color key="backgroundColor" name="blueMain"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="ofO-hg-ami"/>
+                    </constraints>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="searchDidTouch:" destination="-1" eventType="touchUpInside" id="hGn-7a-6Xw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="grayMain"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="did-fi-2kA" secondAttribute="trailing" constant="20" id="B7Z-Ie-sAo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jbs-DW-X88" secondAttribute="trailing" constant="20" id="KNK-1m-Y8u"/>
+                <constraint firstItem="WSl-Es-XMb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="W0g-vP-4uH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="WSl-Es-XMb" secondAttribute="bottom" constant="20" id="X5G-2K-Sr5"/>
+                <constraint firstItem="did-fi-2kA" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="bZr-ii-gKT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WSl-Es-XMb" secondAttribute="trailing" constant="20" id="e8K-UT-cTc"/>
+                <constraint firstItem="jbs-DW-X88" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="jVw-yL-6FS"/>
+                <constraint firstItem="did-fi-2kA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="okB-1q-lee"/>
+                <constraint firstItem="jbs-DW-X88" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="sp1-Fn-5Ni"/>
+                <constraint firstItem="did-fi-2kA" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ulP-vG-HD9"/>
+            </constraints>
+            <point key="canvasLocation" x="77" y="114"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="blueMain">
+            <color red="0.27099999785423279" green="0.67799997329711914" blue="0.85100001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grayLabel">
+            <color red="0.57300001382827759" green="0.57300001382827759" blue="0.57300001382827759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grayMain">
+            <color red="0.92199999094009399" green="0.92199999094009399" blue="0.92199999094009399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

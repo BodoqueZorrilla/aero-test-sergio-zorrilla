@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  AlboAeroTestSZ
+
+  Created by Sergio Eduardo Zorrilla Arellano on 07/06/21.
+  
+*/
+// MARK: - SearchRangeViewController
+
+"search.title" = "AIRPORT\nfinder";
+"search.radius" = "RADIUS IN KM";
+"search.button" = "SEARCH";
+"search.alert.title" = "Alert";
+"search.alert.message" = "Please go to Settings and turn on the permissions of location";
+"search.alert.settings" = "Settings";
+"search.alert.cancel" = "Cancel";

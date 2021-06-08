@@ -1,0 +1,17 @@
+strings:
+  inputs: 
+    - AlboAeroTestSZ/Assets
+  filter: .+\.strings$
+  outputs:
+    - templateName: structured-swift4
+      output: AlboAeroTestSZ/Utilities/swiftGen/LocalizedKeys.swift
+      params:
+        enumName: LocalizedKeys
+
+xcassets:
+  inputs:
+    - AlboAeroTestSZ/Assets/Colors.xcassets
+    - AlboAeroTestSZ/Assets/Assets.xcassets
+  outputs:
+    - templateName: swift4
+      output: AlboAeroTestSZ/Utilities/swiftGen/Assets.swift
